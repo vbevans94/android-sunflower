@@ -23,17 +23,15 @@ import androidx.test.InstrumentationRegistry
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import com.google.samples.apps.sunflower.data.AppDatabase
-import integration.test.AddFlowTest
-import integration.test.CheckGardenTest
 import com.google.samples.apps.sunflower.workers.SeedDatabaseWorker
+import integration.test.AddFlowTest
 import org.junit.BeforeClass
 import org.junit.runner.RunWith
 import org.junit.runners.Suite
 
 @RunWith(Suite::class)
 @Suite.SuiteClasses(
-        AddFlowTest::class,
-        CheckGardenTest::class
+        AddFlowTest::class
 )
 object TestSuite {
 
